@@ -6,14 +6,14 @@
             "fish_inventory": {
                 "1": [
                     "Sole",
-                    40.2545,
-                    6.34008375,
+                    37.8169,
+                    5.95616175,
                     "blue",
                     "uncommon"
                 ]
             },
             "bait_inventory": {
-                "worm": 4
+                "worm": 3
             },
             "wallet": 0,
             "collection": {
