@@ -4,6 +4,58 @@ import random
 import pandas as pd
 import copy
 from datetime import datetime
+import json
+import os
+
+script_dir = os.oath.dirname(__file__)
+
+USER_DATA_FILE = os.path.join(script_dir, "data", "users.json")
+#USER_DATA_FILE = 'data/users.json'
+
+
+def load_user_data():
+    if not os.path.exists(USER_DATA_FILE):
+        return {}
+    
+    with open(USER_DATA_FILE, "r") as file:
+        return json.load(file)
+
+if "loaded_data" not in st.session_state:
+    st.session_state.loaded_data = load_user_data()
+
+def collect_data():
+    fish_inventory = st.session_state.fish_inventory
+    bait_inventory = st.session_state.bait_inventory
+    wallet = st.session_state.wallet
+    collection = st.session_state.collection
+
+def save_user_data(user_data):
+    with open(USER_DATA_FILE, "w") as file:
+        json.dump(user_data, file, indent=4)
+
+def add_user(username, password):
+    user_data = load_user_data()
+    user_data[username] = {"password" : password,
+                           "data" : {
+                                "fish_inventory" : st.session_state.fish_inventory,
+                                "bait_inventory" : st.session_state.bait_inventory,
+                                "wallet" : st.session_state.wallet,
+                                "collection" : st.session_state.collection
+                                }
+                        }
+    save_user_data(user_data)
+
+def get_user_info(username, password):
+    user_data = load_user_data()
+    if username in user_data and user_data[username]["password"] == password:
+        return user_data[username]["data"]
+    return None
+
+
+
+
+
+
 
 st.title("Let's go Fishin'!")
 st.title("")
@@ -162,11 +214,6 @@ def sell_fish(inventory):
             sold_items[values[0]] += 1
     return total_sum, sold_items
 
-def add_money():
-    st.session_state.wallet += 10
-
-def sub_money():
-    st.session_state.wallet -= 5
 
 def check_wallet():
     st.write(f"You currently have {st.session_state.wallet:.2f}€ in your account.")
@@ -392,6 +439,30 @@ def buy_action():
     if st.button("Leave Shop", use_container_width=True, type="secondary"):
         st.rerun()
 
+@st.dialog("Save your progress by signing up!")
+def sign_up_action():
+    con1 = st.container()
+    con2 = st.container()
+    with con1:
+        col1, col2 = st.columns(2, gap="small")
+        with col1:
+            username_input = st.text_input("username")
+        with col2:
+            password_input = st.text_input("password", type="password")
+    with con2:
+        sign_up = st.button("Sign up now!", type="primary", use_container_width=True)
+        leave_button = st.button("Maybe later", type="secondary", use_container_width=True)
+    if leave_button:
+        st.rerun()
+    if sign_up:
+        if username_input in st.session_state.loaded_data:
+            with con1:
+                st.error("The selected username already exists.")
+        else:
+            add_user(username_input, password_input)
+            st.session_state.logged_in = username_input
+            st.rerun()
+
 #st.text(st.session_state.bait_inventory)
 
 main_con_1 = st.container()
@@ -447,6 +518,7 @@ with main_con_2:
 
 sidebar = st.sidebar
 with sidebar:
+    login_con = st.container()
     side_con_1 = st.container(border=True)
     side_con_2 = st.container()
 
@@ -496,6 +568,17 @@ with sidebar:
         if cheat_input == "gold_fisher":
             st.session_state.wallet += 100
 
+    with login_con:
+        if "logged_in" not in st.session_state:
+            col_login, col_signup = st.columns(2, gap="small")
+            with col_login:
+                login_button = st.button("Log in", type="primary", use_container_width=True)
+            with col_signup:
+                signup_button = st.button("Sign up", type="secondary", use_container_width=True)
+                if signup_button:
+                    sign_up_action()
+        else:
+            login_info_button = st.button(f"Welcome back {st.session_state.logged_in}!", use_container_width=True)
 
     with side_con_1:
         check_wallet()
