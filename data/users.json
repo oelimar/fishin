@@ -24,11 +24,16 @@
                     2.7948375000000003,
                     "gray",
                     "common"
+                ],
+                "4": [
+                    "Sole",
+                    33.7027,
+                    3.5387835,
+                    "gray",
+                    "common"
                 ]
             },
-            "bait_inventory": {
-                "worm": 1
-            },
+            "bait_inventory": {},
             "wallet": 0,
             "collection": {
                 "Sea Bass": null,
