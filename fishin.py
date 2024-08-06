@@ -71,16 +71,26 @@ def load_user_data2():
 if "loaded_data" not in st.session_state:
     st.session_state.loaded_data, sha = load_user_data()
 
-def collect_data(username, password):
+
+def collect_data(username, password=None):
     user_data, sha = load_user_data()
-    user_data[username] = {"password" : password,
-                           "data" : {
-                                "fish_inventory" : st.session_state.fish_inventory,
-                                "bait_inventory" : st.session_state.bait_inventory,
-                                "wallet" : st.session_state.wallet,
-                                "collection" : st.session_state.collection
+    if username not in user_data:
+        user_data[username] = {"password" : password,
+                               "account_created" : datetime.now().strftime("%d-%m-%Y %H:%M:%S"),
+                               "data" : {
+                                    "fish_inventory" : st.session_state.fish_inventory,
+                                    "bait_inventory" : st.session_state.bait_inventory,
+                                    "wallet" : st.session_state.wallet,
+                                    "collection" : st.session_state.collection
+                                    }
+                            }
+    else:
+        user_data[username]["data"] = {
+                                    "fish_inventory" : st.session_state.fish_inventory,
+                                    "bait_inventory" : st.session_state.bait_inventory,
+                                    "wallet" : st.session_state.wallet,
+                                    "collection" : st.session_state.collection
                                 }
-                        }    
     return user_data, sha
 
 def save_user_data(user_data, sha):
@@ -90,23 +100,19 @@ def save_user_data(user_data, sha):
     except Exception as e:
         print(f"Error saving user data {e}")
 
-def save_user_data2(user_data):
-    try:
-        with open(USER_DATA_FILE, "w") as file:
-            json.dump(user_data, file, indent=4)
-    except Exception as e:
-        print(f"Error saving user data {e}")
-
-def add_user(username, password):
+def add_user(username, password=None):
     user_data, sha = collect_data(username, password)
     save_user_data(user_data, sha)
 
 def get_user_info(username, password):
-    user_data = load_user_data()
+    user_data, sha = load_user_data()
     if username in user_data and user_data[username]["password"] == password:
         return user_data[username]["data"]
     return None
 
+def save_current_progress():
+    if "logged_in" in st.session_state:
+        add_user(st.session_state.logged_in)
 
 
 st.write(st.session_state.loaded_data)
@@ -517,10 +523,37 @@ def sign_up_action():
         if username_input in st.session_state.loaded_data:
             with con1:
                 st.error("The selected username already exists.")
+        elif username_input == "":
+            with con1:
+                st.error("Please enter a valid username")
+        elif password_input == "":
+            with con1:
+                st.error("Please assign a valid password.")
+
         else:
             add_user(username_input, password_input)
             st.session_state.logged_in = username_input
             st.rerun()
+
+@st.dialog("Account Information")
+def check_account_info():
+    st.write(f"Your currently logged in as {st.session_state.logged_in}!")
+    user_data, sha = load_user_data()
+    st.write(f"Account created: {user_data[st.session_state.logged_in].account_created}")
+    leave = st.button("Leave Information Screen", type="primary", use_container_width=True)
+    logout_button = st.button("Log out", type="secondary", use_container_width=True)
+    delete_account = st.button("Delete Account" ,type="secondary", use_container_width=True)
+    if leave:
+        st.rerun()
+    if logout_button:
+        del st.session_state.logged_in
+        st.rerun()
+    if delete_account:
+        del user_data[st.session_state.logged_in]
+        save_user_data(user_data, sha)
+        del st.session_state.logged_in
+        st.rerun()
+
 
 #st.text(st.session_state.bait_inventory)
 
@@ -632,6 +665,8 @@ with sidebar:
             col_login, col_signup = st.columns(2, gap="small")
             with col_login:
                 login_button = st.button("Log in", type="primary", use_container_width=True)
+                if login_button:
+                    check_account_info()
             with col_signup:
                 signup_button = st.button("Sign up", type="secondary", use_container_width=True)
                 if signup_button:
