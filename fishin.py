@@ -59,6 +59,7 @@ def get_user_info(username, password):
 
 st.write(st.session_state.loaded_data)
 if "logged_in" in st.session_state:
+    st.session_state.loaded_data = load_user_data()
     st.write(st.session_state.loaded_data[st.session_state.logged_in])
 
 
