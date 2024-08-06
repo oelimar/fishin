@@ -437,10 +437,17 @@
                     13.299531,
                     "gray",
                     "common"
+                ],
+                "63": [
+                    "Halibut",
+                    64.1403,
+                    15.7143735,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "squid": 31
+                "squid": 30
             },
             "wallet": 1243.14,
             "collection": {
