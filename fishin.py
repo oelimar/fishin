@@ -551,9 +551,9 @@ def log_in_action():
                 st.session_state.logged_in = username_input
 
                 st.session_state.fish_inventory = user_data[username_input]["data"]["fish_inventory"]
-                st.session_state.fish_inventory = user_data[username_input]["data"]["bait_inventory"]
-                st.session_state.fish_inventory = user_data[username_input]["data"]["wallet"]
-                st.session_state.fish_inventory = user_data[username_input]["data"]["collection"]
+                st.session_state.bait_inventory = user_data[username_input]["data"]["bait_inventory"]
+                st.session_state.wallet = user_data[username_input]["data"]["wallet"]
+                st.session_state.collection = user_data[username_input]["data"]["collection"]
 
                 st.rerun()
 
