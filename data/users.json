@@ -87,10 +87,17 @@
                     22.545145000000005,
                     "gray",
                     "common"
+                ],
+                "13": [
+                    "Halibut",
+                    172.3085,
+                    63.323373750000016,
+                    "blue",
+                    "uncommon"
                 ]
             },
             "bait_inventory": {
-                "squid": 82
+                "squid": 81
             },
             "wallet": 1243.14,
             "collection": {
@@ -140,14 +147,14 @@
                 ],
                 "Mackerel": null,
                 "Halibut": [
-                    126.4187,
-                    "common",
-                    "gray",
-                    "06-08-2024 20:54:18",
+                    172.3085,
+                    "uncommon",
+                    "blue",
+                    "06-08-2024 20:55:11",
                     "coast",
                     "squid",
-                    4.424654500000001,
-                    0.6320935
+                    6.030797500000001,
+                    0.8615425000000001
                 ],
                 "Red Snapper": null,
                 "Anglerfish": null,
