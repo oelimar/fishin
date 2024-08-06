@@ -6,14 +6,51 @@ import copy
 from datetime import datetime
 import json
 import os
+import base64
+import requests
 
 script_dir = os.path.dirname(__file__)
 
 USER_DATA_FILE = os.path.join(script_dir, "data", "users.json")
 #USER_DATA_FILE = 'data/users.json'
 
+repo_owner = st.secrets.github_info.repo_owner
+repo_name = st.secrets.github_info.repo_name
+file_path = st.secrets.github_info.file_path
+branch = st.secrets.github_info.branch
+token = st.secrets.github_info.token
+
+def get_file_contents():
+    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}"
+    headers = {'Authorization': f'token {token}'}
+    response = requests.get(url, headers=headers)
+    response_json = response.json()
+    file_content = base64.b64decode(response_json['content']).decode('utf-8')
+    sha = response_json['sha']
+    return file_content, sha
+
+def update_file(new_content, sha):
+    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}"
+    headers = {'Authorization': f'token {token}'}
+    data = {
+        'message': 'Update JSON file via Streamlit',
+        'content': base64.b64encode(new_content.encode('utf-8')).decode('utf-8'),
+        'sha': sha,
+        'branch': branch
+    }
+    response = requests.put(url, headers=headers, data=json.dumps(data))
+    return response
+
 
 def load_user_data():
+    try:
+        st.session_state.loaded_data, sha = get_file_contents()
+        return st.session_state.loaded_data, sha
+    except Exception as e:
+        print(f"Error loading user data {e}")
+        return {}
+
+def load_user_data2():
     if not os.path.exists(USER_DATA_FILE):
         return {}
     
@@ -27,18 +64,8 @@ def load_user_data():
 if "loaded_data" not in st.session_state:
     st.session_state.loaded_data = load_user_data()
 
-def collect_data():
-    fish_inventory = st.session_state.fish_inventory
-    bait_inventory = st.session_state.bait_inventory
-    wallet = st.session_state.wallet
-    collection = st.session_state.collection
-
-def save_user_data(user_data):
-    with open(USER_DATA_FILE, "w") as file:
-        json.dump(user_data, file, indent=4)
-
-def add_user(username, password):
-    user_data = load_user_data()
+def collect_data(username, password):
+    user_data, sha = load_user_data()
     user_data[username] = {"password" : password,
                            "data" : {
                                 "fish_inventory" : st.session_state.fish_inventory,
@@ -46,7 +73,25 @@ def add_user(username, password):
                                 "wallet" : st.session_state.wallet,
                                 "collection" : st.session_state.collection
                                 }
-                        }
+                        }    
+    return user_data, sha
+
+def save_user_data(user_data, sha):
+    try:
+        new_data = json.dumps(user_data)
+        update_file(new_data, sha)
+    except Exception as e:
+        print(f"Error saving user data {e}")
+
+def save_user_data2(user_data):
+    try:
+        with open(USER_DATA_FILE, "w") as file:
+            json.dump(user_data, file, indent=4)
+    except Exception as e:
+        print(f"Error saving user data {e}")
+
+def add_user(username, password):
+    user_data = collect_data(username, password)
     save_user_data(user_data)
 
 def get_user_info(username, password):
