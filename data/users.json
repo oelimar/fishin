@@ -423,10 +423,17 @@
                     141.11015100000003,
                     "red",
                     "epic"
+                ],
+                "61": [
+                    "Halibut",
+                    156.9855,
+                    57.69217125000001,
+                    "blue",
+                    "uncommon"
                 ]
             },
             "bait_inventory": {
-                "squid": 33
+                "squid": 32
             },
             "wallet": 1243.14,
             "collection": {
