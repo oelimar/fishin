@@ -29,5 +29,58 @@
                 "Eel": null
             }
         }
+    },
+    "test_account": {
+        "password": "test_password",
+        "account_created": "06-08-2024 16:53:37",
+        "data": {
+            "fish_inventory": {
+                "1": [
+                    "Sole",
+                    47.1107,
+                    9.893247,
+                    "purple",
+                    "rare"
+                ]
+            },
+            "bait_inventory": {
+                "squid": 20,
+                "fish": 20,
+                "shrimp": 20,
+                "bread": 20,
+                "fly": 20,
+                "worm": 19
+            },
+            "wallet": 0,
+            "collection": {
+                "Sea Bass": null,
+                "Carp": null,
+                "Northern Pike": null,
+                "Catfish": null,
+                "Sole": [
+                    47.1107,
+                    "rare",
+                    "purple",
+                    "06-08-2024 16:53:25",
+                    "coast",
+                    "worm",
+                    1.6488745000000002,
+                    0.942214
+                ],
+                "Bream": null,
+                "Trout": null,
+                "Tuna": null,
+                "Mackerel": null,
+                "Halibut": null,
+                "Red Snapper": null,
+                "Anglerfish": null,
+                "Goldfish": null,
+                "Grouper": null,
+                "Pufferfish": null,
+                "Swordfish": null,
+                "Clownfish": null,
+                "Eel": null
+            }
+        }
     }
 }
