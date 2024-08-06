@@ -572,6 +572,11 @@ def check_account_info():
     st.write(f"Account created: {user_data[logged_in_user]['account_created']}")
     leave = st.button("Leave Information Screen", type="primary", use_container_width=True)
     logout_button = st.button("Log out", type="secondary", use_container_width=True)
+    pw_col1, pw_col2 = st.columns(2, gap="small")
+    with pw_col2:
+        password_button = st.button("Change password", type="secondary", use_container_width=True)
+    with pw_col1:
+        password_input = st.text_input("new password", label_visibility="collapsed", type="password")
     delete_account = st.button("Delete Account" ,type="secondary", use_container_width=True)
     if leave:
         st.rerun()
@@ -582,6 +587,14 @@ def check_account_info():
         del st.session_state.collection
         del st.session_state.wallet
         st.rerun()
+    if password_button:
+        if password_input == "":
+            st.error("Please enter a valid password")
+        else:
+            user_data[logged_in_user]["password"] = password_input
+            save_user_data(user_data, sha)
+            st.rerun()
+        
     if delete_account:
         del user_data[st.session_state.logged_in]
         save_user_data(user_data, sha)
