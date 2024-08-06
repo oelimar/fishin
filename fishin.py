@@ -53,7 +53,7 @@ def load_user_data():
         print(f"Error loading user data {e}")
         return {}
 
-content, sha = get_file_contents()
+content, sha = load_user_data()
 st.write(content)
 st.write(sha)
 
@@ -114,12 +114,6 @@ def save_current_progress():
     if "logged_in" in st.session_state:
         add_user(st.session_state.logged_in)
 
-
-st.write(st.session_state.loaded_data)
-if "logged_in" in st.session_state:
-    st.session_state.loaded_data, sha = load_user_data()
-    save_user_data(st.session_state.loaded_data, sha)
-    st.write(st.session_state.loaded_data[st.session_state.logged_in])
 
 
 st.title("Let's go Fishin'!")
@@ -568,7 +562,7 @@ def log_in_action():
 def check_account_info():
     st.write(f"Your currently logged in as {st.session_state.logged_in}!")
     user_data, sha = load_user_data()
-    st.write(f"Account created: {user_data[st.session_state.logged_in].account_created}")
+    st.write(f"Account created: {user_data[st.session_state.logged_in]["account_created"]}")
     leave = st.button("Leave Information Screen", type="primary", use_container_width=True)
     logout_button = st.button("Log out", type="secondary", use_container_width=True)
     delete_account = st.button("Delete Account" ,type="secondary", use_container_width=True)
