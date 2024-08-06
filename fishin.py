@@ -45,7 +45,8 @@ def update_file(new_content, sha):
 def load_user_data():
     try:
         loaded_data, sha = get_file_contents()
-        return loaded_data, sha
+        user_data = json.loads(loaded_data)
+        return user_data, sha
     except Exception as e:
         print(f"Error loading user data {e}")
         return {}
