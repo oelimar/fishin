@@ -1,1 +1,40 @@
-{"user1": {"password": "password123", "info": "Additional information for user1"}, "user2": {"password": "securepassword", "info": "Additional information for user2"}, "oelimar": {"password": "oelimar", "data": {"fish_inventory": {}, "bait_inventory": {"shrimp": 5}, "wallet": 0, "collection": {"Sea Bass": null, "Carp": null, "Northern Pike": null, "Catfish": null, "Sole": null, "Bream": null, "Trout": null, "Tuna": null, "Mackerel": null, "Halibut": null, "Red Snapper": null, "Anglerfish": null, "Goldfish": null, "Grouper": null, "Pufferfish": null, "Swordfish": null, "Clownfish": null, "Eel": null}}}}
+{
+    "user1": {
+        "password": "password123",
+        "info": "Additional information for user1"
+    },
+    "user2": {
+        "password": "securepassword",
+        "info": "Additional information for user2"
+    },
+    "oelimar": {
+        "password": "oelimar",
+        "data": {
+            "fish_inventory": {},
+            "bait_inventory": {
+                "shrimp": 5
+            },
+            "wallet": 0,
+            "collection": {
+                "Sea Bass": null,
+                "Carp": null,
+                "Northern Pike": null,
+                "Catfish": null,
+                "Sole": null,
+                "Bream": null,
+                "Trout": null,
+                "Tuna": null,
+                "Mackerel": null,
+                "Halibut": null,
+                "Red Snapper": null,
+                "Anglerfish": null,
+                "Goldfish": null,
+                "Grouper": null,
+                "Pufferfish": null,
+                "Swordfish": null,
+                "Clownfish": null,
+                "Eel": null
+            }
+        }
+    }
+}
