@@ -695,7 +695,7 @@ with sidebar:
             with col_login:
                 login_button = st.button("Log in", type="primary", use_container_width=True)
                 if login_button:
-
+                    log_in_action()
 
             with col_signup:
                 signup_button = st.button("Sign up", type="secondary", use_container_width=True)
