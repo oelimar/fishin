@@ -304,10 +304,17 @@
                     45.18538500000001,
                     "blue",
                     "uncommon"
+                ],
+                "44": [
+                    "Catfish",
+                    290.9489,
+                    122.19853800000001,
+                    "red",
+                    "epic"
                 ]
             },
             "bait_inventory": {
-                "fish": 56
+                "fish": 55
             },
             "wallet": 3963.9900000000007,
             "collection": {
