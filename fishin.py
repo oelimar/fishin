@@ -53,9 +53,6 @@ def load_user_data():
         print(f"Error loading user data {e}")
         return {}
 
-content, sha = load_user_data()
-st.write(content)
-st.write(sha)
 
 def load_user_data2():
     if not os.path.exists(USER_DATA_FILE):
@@ -411,6 +408,7 @@ def congratulations(fish_name, fish_size, location, bait):
 
         st.session_state["fish_inventory"][st.session_state["fish_counter"]] = [fish_name, fish_size, worth, color, rarity]
         st.session_state["fish_counter"] += 1
+        save_current_progress()
         st.rerun()
     wikipedia_link = f"https://wikipedia.org/wiki/{fish_name}"
     wikipedia_link_button = st.link_button("Look up online!", wikipedia_link, use_container_width=True)
@@ -444,6 +442,7 @@ def sell_action(total_sum, sold_items, inventory):
             st.session_state["wallet"] += total_sum
             st.session_state["fish_inventory"] = {}
             st.session_state["fish_counter"] = 1
+            save_current_progress()
             st.rerun()
         if st.button("Leave Shop", type="secondary", use_container_width=True):
             st.rerun()
@@ -494,6 +493,7 @@ def buy_action():
         st.session_state.wallet -= st.session_state.total_bait_price
         del st.session_state.total_bait_price
         del st.session_state.shopping_cart
+        save_current_progress()
         st.rerun()
     if st.button("Leave Shop", use_container_width=True, type="secondary"):
         st.rerun()
@@ -549,6 +549,12 @@ def log_in_action():
     if log_in:
         if username_input in user_data and password_input == user_data[username_input]["password"]:
                 st.session_state.logged_in = username_input
+
+                st.session_state.fish_inventory = user_data[username_input]["data"]["fish_inventory"]
+                st.session_state.fish_inventory = user_data[username_input]["data"]["bait_inventory"]
+                st.session_state.fish_inventory = user_data[username_input]["data"]["wallet"]
+                st.session_state.fish_inventory = user_data[username_input]["data"]["collection"]
+
                 st.rerun()
 
         elif username_input in user_data and password_input != user_data[username_input]["password"]:
@@ -571,11 +577,19 @@ def check_account_info():
         st.rerun()
     if logout_button:
         del st.session_state.logged_in
+        del st.session_state.fish_inventory
+        del st.session_state.bait_inventory
+        del st.session_state.collection
+        del st.session_state.wallet
         st.rerun()
     if delete_account:
         del user_data[st.session_state.logged_in]
         save_user_data(user_data, sha)
         del st.session_state.logged_in
+        del st.session_state.fish_inventory
+        del st.session_state.bait_inventory
+        del st.session_state.collection
+        del st.session_state.wallet
         st.rerun()
 
 
