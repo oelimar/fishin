@@ -32,9 +32,11 @@ def get_file_contents():
 def update_file(new_content, sha):
     url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}"
     headers = {'Authorization': f'token {token}'}
+    formatted_content = json.dumps(json.loads(new_content), indent=4)
+    encoded_content = base64.b64encode(formatted_content.encode('utf-8')).decode('utf-8')
     data = {
         'message': 'Update JSON file via Streamlit',
-        'content': base64.b64encode(new_content.encode('utf-8')).decode('utf-8'),
+        'content': encoded_content,
         'sha': sha,
         'branch': branch
     }
