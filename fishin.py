@@ -50,6 +50,8 @@ def load_user_data():
         print(f"Error loading user data {e}")
         return {}
 
+st.write(get_file_contents)
+
 def load_user_data2():
     if not os.path.exists(USER_DATA_FILE):
         return {}
