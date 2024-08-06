@@ -10,10 +10,17 @@
                     5.95616175,
                     "blue",
                     "uncommon"
+                ],
+                "2": [
+                    "Sole",
+                    26.0856,
+                    2.738988,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "worm": 3
+                "worm": 2
             },
             "wallet": 0,
             "collection": {
