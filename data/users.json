@@ -3,9 +3,17 @@
         "password": "rhz0cru_udp5bag5KFK",
         "account_created": "06-08-2024 17:00:33",
         "data": {
-            "fish_inventory": {},
+            "fish_inventory": {
+                "1": [
+                    "Tuna",
+                    187.4694,
+                    98.42143500000003,
+                    "blue",
+                    "uncommon"
+                ]
+            },
             "bait_inventory": {
-                "squid": 100
+                "squid": 99
             },
             "wallet": 408.81999999999994,
             "collection": {
