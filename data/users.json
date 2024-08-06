@@ -24,10 +24,17 @@
                     48.03015000000001,
                     "gray",
                     "common"
+                ],
+                "4": [
+                    "Tuna",
+                    151.2796,
+                    52.947860000000006,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "squid": 97
+                "squid": 96
             },
             "wallet": 408.81999999999994,
             "collection": {
