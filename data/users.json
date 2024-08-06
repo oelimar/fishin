@@ -3,59 +3,9 @@
         "password": "rhz0cru_udp5bag5KFK",
         "account_created": "06-08-2024 17:00:33",
         "data": {
-            "fish_inventory": {
-                "1": [
-                    "Tuna",
-                    134.1059,
-                    46.937065000000004,
-                    "gray",
-                    "common"
-                ],
-                "2": [
-                    "Tuna",
-                    205.5399,
-                    107.90844750000002,
-                    "blue",
-                    "uncommon"
-                ],
-                "3": [
-                    "Tuna",
-                    234.2008,
-                    163.94056,
-                    "purple",
-                    "rare"
-                ],
-                "4": [
-                    "Tuna",
-                    238.6216,
-                    250.55268,
-                    "red",
-                    "epic"
-                ],
-                "5": [
-                    "Tuna",
-                    117.0007,
-                    40.950245,
-                    "gray",
-                    "common"
-                ],
-                "6": [
-                    "Tuna",
-                    100.8463,
-                    35.29620500000001,
-                    "gray",
-                    "common"
-                ],
-                "7": [
-                    "Tuna",
-                    124.5707,
-                    43.59974500000001,
-                    "gray",
-                    "common"
-                ]
-            },
+            "fish_inventory": {},
             "bait_inventory": {},
-            "wallet": 1.6300000000000026,
+            "wallet": 690.8199999999999,
             "collection": {
                 "Sea Bass": null,
                 "Carp": null,
