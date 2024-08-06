@@ -20,9 +20,10 @@
                 ]
             },
             "bait_inventory": {
-                "squid": 85
+                "squid": 85,
+                "shrimp": 7
             },
-            "wallet": 1285.21,
+            "wallet": 1243.14,
             "collection": {
                 "Sea Bass": null,
                 "Carp": null,
