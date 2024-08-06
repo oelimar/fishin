@@ -665,14 +665,15 @@ with sidebar:
             col_login, col_signup = st.columns(2, gap="small")
             with col_login:
                 login_button = st.button("Log in", type="primary", use_container_width=True)
-                if login_button:
-                    check_account_info()
+
             with col_signup:
                 signup_button = st.button("Sign up", type="secondary", use_container_width=True)
                 if signup_button:
                     sign_up_action()
         else:
             login_info_button = st.button(f"Welcome back {st.session_state.logged_in}!", use_container_width=True)
+            if login_info_button:
+                check_account_info()
 
     with side_con_1:
         check_wallet()
