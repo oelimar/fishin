@@ -3,9 +3,17 @@
         "password": "rhz0cru_udp5bag5KFK",
         "account_created": "06-08-2024 17:00:33",
         "data": {
-            "fish_inventory": {},
+            "fish_inventory": {
+                "1": [
+                    "Tuna",
+                    134.1059,
+                    46.937065000000004,
+                    "gray",
+                    "common"
+                ]
+            },
             "bait_inventory": {
-                "squid": 7
+                "squid": 6
             },
             "wallet": 1.6300000000000026,
             "collection": {
@@ -25,7 +33,16 @@
                 ],
                 "Bream": null,
                 "Trout": null,
-                "Tuna": null,
+                "Tuna": [
+                    134.1059,
+                    "common",
+                    "gray",
+                    "06-08-2024 18:09:25",
+                    "ocean",
+                    "squid",
+                    4.6937065,
+                    0.5364236
+                ],
                 "Mackerel": null,
                 "Halibut": null,
                 "Red Snapper": null,
