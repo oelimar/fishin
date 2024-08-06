@@ -563,10 +563,6 @@ def check_account_info():
     st.write(f"Your currently logged in as {st.session_state.logged_in}!")
     user_data, sha = load_user_data()
     logged_in_user = st.session_state.logged_in
-    st.write(user_data)
-    st.write(user_data[logged_in_user])
-    st.write(user_data[logged_in_user]["password"])
-    st.write(user_data[logged_in_user]["account_created"])
     st.write(f"Account created: {user_data[logged_in_user]['account_created']}")
     leave = st.button("Leave Information Screen", type="primary", use_container_width=True)
     logout_button = st.button("Log out", type="secondary", use_container_width=True)
