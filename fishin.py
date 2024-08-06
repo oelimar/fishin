@@ -44,8 +44,8 @@ def update_file(new_content, sha):
 
 def load_user_data():
     try:
-        st.session_state.loaded_data, sha = get_file_contents()
-        return st.session_state.loaded_data, sha
+        loaded_data, sha = get_file_contents()
+        return loaded_data, sha
     except Exception as e:
         print(f"Error loading user data {e}")
         return {}
