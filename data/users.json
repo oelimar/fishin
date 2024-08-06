@@ -17,10 +17,17 @@
                     2.738988,
                     "gray",
                     "common"
+                ],
+                "3": [
+                    "Sole",
+                    26.6175,
+                    2.7948375000000003,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "worm": 2
+                "worm": 1
             },
             "wallet": 0,
             "collection": {
