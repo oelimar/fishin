@@ -6,10 +6,10 @@
             "fish_inventory": {
                 "1": [
                     "Tuna",
-                    164.6571,
-                    57.62998500000002,
-                    "gray",
-                    "common"
+                    221.2479,
+                    116.15514750000001,
+                    "blue",
+                    "uncommon"
                 ],
                 "2": [
                     "Tuna",
@@ -83,7 +83,7 @@
                 ]
             },
             "bait_inventory": {
-                "squid": 88
+                "squid": 87
             },
             "wallet": 408.81999999999994,
             "collection": {
