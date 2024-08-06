@@ -1,12 +1,4 @@
 {
-    "user1": {
-        "password": "password123",
-        "info": "Additional information for user1"
-    },
-    "user2": {
-        "password": "securepassword",
-        "info": "Additional information for user2"
-    },
     "oelimar": {
         "password": "oelimar",
         "data": {
