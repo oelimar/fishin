@@ -7,7 +7,7 @@ from datetime import datetime
 import json
 import os
 
-script_dir = os.oath.dirname(__file__)
+script_dir = os.path.dirname(__file__)
 
 USER_DATA_FILE = os.path.join(script_dir, "data", "users.json")
 #USER_DATA_FILE = 'data/users.json'
