@@ -720,7 +720,7 @@ with sidebar:
                 if signup_button:
                     sign_up_action()
         else:
-            login_info_button = st.button(f"Welcome back {st.session_state.logged_in}!", use_container_width=True)
+            login_info_button = st.button(f"Welcome back {st.session_state.logged_in}!", type="primary", use_container_width=True)
             if login_info_button:
                 check_account_info()
 
