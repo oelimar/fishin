@@ -17,10 +17,17 @@
                     107.90844750000002,
                     "blue",
                     "uncommon"
+                ],
+                "3": [
+                    "Tuna",
+                    234.2008,
+                    163.94056,
+                    "purple",
+                    "rare"
                 ]
             },
             "bait_inventory": {
-                "squid": 5
+                "squid": 4
             },
             "wallet": 1.6300000000000026,
             "collection": {
@@ -41,14 +48,14 @@
                 "Bream": null,
                 "Trout": null,
                 "Tuna": [
-                    205.5399,
-                    "uncommon",
-                    "blue",
-                    "06-08-2024 18:10:07",
+                    234.2008,
+                    "rare",
+                    "purple",
+                    "06-08-2024 18:10:13",
                     "ocean",
                     "squid",
-                    7.1938965,
-                    0.8221596
+                    8.197028,
+                    0.9368032
                 ],
                 "Mackerel": null,
                 "Halibut": null,
