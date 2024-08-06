@@ -688,6 +688,15 @@ with sidebar:
                 st.session_state.bait_inventory[bait] = 20
         if cheat_input == "gold_fisher":
             st.session_state.wallet += 100
+        if cheat_input == "deluge":
+            user_data, sha = load_user_data()
+            user_data = {
+
+            }
+            save_user_data(user_data, sha)
+            st.rerun()
+
+
 
     with login_con:
         if "logged_in" not in st.session_state:
