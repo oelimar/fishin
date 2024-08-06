@@ -255,10 +255,17 @@
                     9.317588,
                     "gray",
                     "common"
+                ],
+                "37": [
+                    "Northern Pike",
+                    97.9656,
+                    13.715183999999999,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "fish": 63
+                "fish": 62
             },
             "wallet": 3963.9900000000007,
             "collection": {
