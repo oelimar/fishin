@@ -548,7 +548,7 @@ def log_in_action():
         with col2:
             password_input = st.text_input("password", type="password")
     with con2:
-        log_in = st.button("Log in", type="primary", use_container_width=True)
+        log_in = st.button("Log in", type="primary", key="login_dialog", use_container_width=True)
         leave_button = st.button("Maybe later", type="secondary", use_container_width=True)
     if leave_button:
         st.rerun()
