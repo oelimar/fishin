@@ -4,8 +4,10 @@
         "account_created": "06-08-2024 17:00:33",
         "data": {
             "fish_inventory": {},
-            "bait_inventory": {},
-            "wallet": 690.8199999999999,
+            "bait_inventory": {
+                "squid": 100
+            },
+            "wallet": 408.81999999999994,
             "collection": {
                 "Sea Bass": null,
                 "Carp": null,
