@@ -62,7 +62,7 @@ def load_user_data2():
         return {}
 
 if "loaded_data" not in st.session_state:
-    st.session_state.loaded_data = load_user_data()
+    st.session_state.loaded_data, sha = load_user_data()
 
 def collect_data(username, password):
     user_data, sha = load_user_data()
@@ -91,8 +91,8 @@ def save_user_data2(user_data):
         print(f"Error saving user data {e}")
 
 def add_user(username, password):
-    user_data = collect_data(username, password)
-    save_user_data(user_data)
+    user_data, sha = collect_data(username, password)
+    save_user_data(user_data, sha)
 
 def get_user_info(username, password):
     user_data = load_user_data()
@@ -104,8 +104,8 @@ def get_user_info(username, password):
 
 st.write(st.session_state.loaded_data)
 if "logged_in" in st.session_state:
-    st.session_state.loaded_data = load_user_data()
-    save_user_data(st.session_state.loaded_data)
+    st.session_state.loaded_data, sha = load_user_data()
+    save_user_data(st.session_state.loaded_data, sha)
     st.write(st.session_state.loaded_data[st.session_state.logged_in])
 
 
