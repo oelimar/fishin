@@ -506,6 +506,7 @@ def buy_action():
 
 @st.dialog("Save your progress by signing up!")
 def sign_up_action():
+    user_data, sha = load_user_data()
     con1 = st.container()
     con2 = st.container()
     with con1:
@@ -520,7 +521,7 @@ def sign_up_action():
     if leave_button:
         st.rerun()
     if sign_up:
-        if username_input in st.session_state.loaded_data:
+        if username_input in user_data:
             with con1:
                 st.error("The selected username already exists.")
         elif username_input == "":
@@ -534,6 +535,34 @@ def sign_up_action():
             add_user(username_input, password_input)
             st.session_state.logged_in = username_input
             st.rerun()
+
+@st.dialog("Log back in to see your progress!")
+def log_in_action():
+    user_data, sha = load_user_data()
+    con1 = st.container()
+    con2 = st.container()
+    with con1:
+        col1, col2 = st.columns(2, gap="small")
+        with col1:
+            username_input = st.text_input("username")
+        with col2:
+            password_input = st.text_input("password", type="password")
+    with con2:
+        log_in = st.button("Log in", type="primary", use_container_width=True)
+        leave_button = st.button("Maybe later", type="secondary", use_container_width=True)
+    if leave_button:
+        st.rerun()
+    if log_in:
+        if username_input in user_data and password_input == user_data[username_input]["password"]:
+                st.session_state.logged_in = username_input
+                st.rerun()
+
+        elif username_input in user_data and password_input != user_data[username_input]["password"]:
+            with con1:
+                st.error("Password is incorrect")
+        elif username_input not in user_data:
+            with con1:
+                st.error("The username is not registered")  
 
 @st.dialog("Account Information")
 def check_account_info():
@@ -665,6 +694,8 @@ with sidebar:
             col_login, col_signup = st.columns(2, gap="small")
             with col_login:
                 login_button = st.button("Log in", type="primary", use_container_width=True)
+                if login_button:
+
 
             with col_signup:
                 signup_button = st.button("Sign up", type="secondary", use_container_width=True)
