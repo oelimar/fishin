@@ -573,9 +573,9 @@ def check_account_info():
     leave = st.button("Leave Information Screen", type="primary", use_container_width=True)
     logout_button = st.button("Log out", type="secondary", use_container_width=True)
     pw_col1, pw_col2 = st.columns(2, gap="small")
-    with pw_col2:
-        password_button = st.button("Change password", type="secondary", use_container_width=True)
     with pw_col1:
+        password_button = st.button("Change password", type="secondary", use_container_width=True)
+    with pw_col2:
         password_input = st.text_input("new password", label_visibility="collapsed", type="password")
     delete_account = st.button("Delete Account" ,type="secondary", use_container_width=True)
     if leave:
