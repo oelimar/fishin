@@ -58,7 +58,7 @@ def get_user_info(username, password):
 
 
 st.write(st.session_state.loaded_data)
-
+st.write(st.session_state.loaded_data[st.session_state.logged_in])
 
 
 st.title("Let's go Fishin'!")
