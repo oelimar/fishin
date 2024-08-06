@@ -283,10 +283,17 @@
                     104.93049,
                     "orange",
                     "mythical"
+                ],
+                "41": [
+                    "Northern Pike",
+                    120.6147,
+                    25.329087,
+                    "blue",
+                    "uncommon"
                 ]
             },
             "bait_inventory": {
-                "fish": 59
+                "fish": 58
             },
             "wallet": 3963.9900000000007,
             "collection": {
