@@ -17,8 +17,12 @@ def load_user_data():
     if not os.path.exists(USER_DATA_FILE):
         return {}
     
-    with open(USER_DATA_FILE, "r") as file:
-        return json.load(file)
+    try:
+        with open(USER_DATA_FILE, "r") as file:
+            return json.load(file)
+    except json.JSONDecodeError:
+        print(f"Error decoding JSON from the file: {USER_DATA_FILE}")
+        return {}
 
 if "loaded_data" not in st.session_state:
     st.session_state.loaded_data = load_user_data()
@@ -53,7 +57,7 @@ def get_user_info(username, password):
 
 
 
-
+st.write(st.session_state.loaded_data)
 
 
 
