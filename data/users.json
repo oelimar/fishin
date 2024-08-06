@@ -3,38 +3,9 @@
         "password": "rhz0cru_udp5bag5KFK",
         "account_created": "06-08-2024 17:00:33",
         "data": {
-            "fish_inventory": {
-                "1": [
-                    "Sole",
-                    37.8169,
-                    5.95616175,
-                    "blue",
-                    "uncommon"
-                ],
-                "2": [
-                    "Sole",
-                    26.0856,
-                    2.738988,
-                    "gray",
-                    "common"
-                ],
-                "3": [
-                    "Sole",
-                    26.6175,
-                    2.7948375000000003,
-                    "gray",
-                    "common"
-                ],
-                "4": [
-                    "Sole",
-                    33.7027,
-                    3.5387835,
-                    "gray",
-                    "common"
-                ]
-            },
+            "fish_inventory": {},
             "bait_inventory": {},
-            "wallet": 0,
+            "wallet": 21.37,
             "collection": {
                 "Sea Bass": null,
                 "Carp": null,
