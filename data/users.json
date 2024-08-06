@@ -17,15 +17,31 @@
                     36.58336500000001,
                     "gray",
                     "common"
+                ],
+                "3": [
+                    "Sea Bass",
+                    43.4606,
+                    7.6056050000000015,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
                 "squid": 85,
-                "shrimp": 7
+                "shrimp": 6
             },
             "wallet": 1243.14,
             "collection": {
-                "Sea Bass": null,
+                "Sea Bass": [
+                    43.4606,
+                    "common",
+                    "gray",
+                    "06-08-2024 20:50:40",
+                    "coast",
+                    "shrimp",
+                    1.5211210000000002,
+                    0.434606
+                ],
                 "Carp": null,
                 "Northern Pike": null,
                 "Catfish": null,
