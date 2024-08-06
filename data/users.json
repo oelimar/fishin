@@ -3,9 +3,17 @@
         "password": "rhz0cru_udp5bag5KFK",
         "account_created": "06-08-2024 17:00:33",
         "data": {
-            "fish_inventory": {},
+            "fish_inventory": {
+                "1": [
+                    "Sole",
+                    40.2545,
+                    6.34008375,
+                    "blue",
+                    "uncommon"
+                ]
+            },
             "bait_inventory": {
-                "worm": 5
+                "worm": 4
             },
             "wallet": 0,
             "collection": {
@@ -13,7 +21,16 @@
                 "Carp": null,
                 "Northern Pike": null,
                 "Catfish": null,
-                "Sole": null,
+                "Sole": [
+                    40.2545,
+                    "uncommon",
+                    "blue",
+                    "06-08-2024 17:02:29",
+                    "coast",
+                    "worm",
+                    1.4089075000000002,
+                    0.80509
+                ],
                 "Bream": null,
                 "Trout": null,
                 "Tuna": null,
