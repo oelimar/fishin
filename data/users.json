@@ -94,10 +94,17 @@
                     14.023114,
                     "gray",
                     "common"
+                ],
+                "14": [
+                    "Catfish",
+                    126.3066,
+                    17.682924000000003,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "fish": 86
+                "fish": 85
             },
             "wallet": 3963.9900000000007,
             "collection": {
