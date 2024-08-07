@@ -157,10 +157,17 @@
                     60.40238750000001,
                     "orange",
                     "mythical"
+                ],
+                "23": [
+                    "Eel",
+                    42.1451,
+                    7.375392500000001,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "fish": 27
+                "fish": 26
             },
             "wallet": 5439.4800000000005,
             "collection": {
