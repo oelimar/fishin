@@ -144,9 +144,17 @@
         "password": "123456",
         "account_created": "07-08-2024 11:17:34",
         "data": {
-            "fish_inventory": {},
+            "fish_inventory": {
+                "1": [
+                    "Trout",
+                    40.2951,
+                    2.820657,
+                    "gray",
+                    "common"
+                ]
+            },
             "bait_inventory": {
-                "worm": 5
+                "worm": 3
             },
             "wallet": 0,
             "collection": {
@@ -156,7 +164,16 @@
                 "Catfish": null,
                 "Sole": null,
                 "Bream": null,
-                "Trout": null,
+                "Trout": [
+                    40.2951,
+                    "common",
+                    "gray",
+                    "07-08-2024 11:18:36",
+                    "river",
+                    "worm",
+                    1.4103285,
+                    0.50368875
+                ],
                 "Tuna": null,
                 "Mackerel": null,
                 "Halibut": null,
