@@ -139,5 +139,36 @@
                 "Eel": null
             }
         }
+    },
+    "susimaus": {
+        "password": "123456",
+        "account_created": "07-08-2024 11:17:34",
+        "data": {
+            "fish_inventory": {},
+            "bait_inventory": {
+                "worm": 5
+            },
+            "wallet": 0,
+            "collection": {
+                "Sea Bass": null,
+                "Carp": null,
+                "Northern Pike": null,
+                "Catfish": null,
+                "Sole": null,
+                "Bream": null,
+                "Trout": null,
+                "Tuna": null,
+                "Mackerel": null,
+                "Halibut": null,
+                "Red Snapper": null,
+                "Anglerfish": null,
+                "Goldfish": null,
+                "Grouper": null,
+                "Pufferfish": null,
+                "Swordfish": null,
+                "Clownfish": null,
+                "Eel": null
+            }
+        }
     }
 }
