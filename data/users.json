@@ -94,10 +94,17 @@
                     16.134063750000003,
                     "blue",
                     "uncommon"
+                ],
+                "14": [
+                    "Eel",
+                    37.2221,
+                    6.513867500000001,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "fish": 36
+                "fish": 35
             },
             "wallet": 5439.4800000000005,
             "collection": {
