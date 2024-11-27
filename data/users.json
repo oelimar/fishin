@@ -13,9 +13,10 @@
                 ]
             },
             "bait_inventory": {
-                "fish": 13
+                "fish": 13,
+                "squid": 35
             },
-            "wallet": 5953.01,
+            "wallet": 5840.66,
             "collection": {
                 "Sea Bass": [
                     46.3818,
