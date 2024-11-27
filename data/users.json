@@ -3,83 +3,12 @@
         "password": "rhz0cru_udp5bag5KFK",
         "account_created": "06-08-2024 17:00:33",
         "data": {
-            "fish_inventory": {
-                "1": [
-                    "Tuna",
-                    156.4206,
-                    54.74721000000001,
-                    "gray",
-                    "common"
-                ],
-                "2": [
-                    "Tuna",
-                    200.4609,
-                    105.24197250000003,
-                    "blue",
-                    "uncommon"
-                ],
-                "3": [
-                    "Tuna",
-                    235.6211,
-                    164.93477000000004,
-                    "purple",
-                    "rare"
-                ],
-                "4": [
-                    "Tuna",
-                    237.6325,
-                    249.51412500000004,
-                    "red",
-                    "epic"
-                ],
-                "5": [
-                    "Tuna",
-                    130.4707,
-                    45.664745,
-                    "gray",
-                    "common"
-                ],
-                "6": [
-                    "Tuna",
-                    202.0661,
-                    106.08470250000002,
-                    "blue",
-                    "uncommon"
-                ],
-                "7": [
-                    "Tuna",
-                    204.321,
-                    107.26852500000001,
-                    "blue",
-                    "uncommon"
-                ],
-                "8": [
-                    "Tuna",
-                    106.6251,
-                    37.31878500000001,
-                    "gray",
-                    "common"
-                ],
-                "9": [
-                    "Tuna",
-                    234.6689,
-                    164.26823000000005,
-                    "purple",
-                    "rare"
-                ],
-                "10": [
-                    "Tuna",
-                    248.0642,
-                    434.11235000000005,
-                    "orange",
-                    "mythical"
-                ]
-            },
+            "fish_inventory": {},
             "bait_inventory": {
                 "fish": 13,
                 "squid": 25
             },
-            "wallet": 5840.66,
+            "wallet": 7325.79,
             "collection": {
                 "Sea Bass": [
                     46.3818,
