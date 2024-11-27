@@ -17,11 +17,18 @@
                     105.24197250000003,
                     "blue",
                     "uncommon"
+                ],
+                "3": [
+                    "Tuna",
+                    235.6211,
+                    164.93477000000004,
+                    "purple",
+                    "rare"
                 ]
             },
             "bait_inventory": {
                 "fish": 13,
-                "squid": 33
+                "squid": 32
             },
             "wallet": 5840.66,
             "collection": {
