@@ -31,11 +31,18 @@
                     249.51412500000004,
                     "red",
                     "epic"
+                ],
+                "5": [
+                    "Tuna",
+                    130.4707,
+                    45.664745,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
                 "fish": 13,
-                "squid": 31
+                "squid": 30
             },
             "wallet": 5840.66,
             "collection": {
