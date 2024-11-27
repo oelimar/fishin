@@ -24,11 +24,18 @@
                     164.93477000000004,
                     "purple",
                     "rare"
+                ],
+                "4": [
+                    "Tuna",
+                    237.6325,
+                    249.51412500000004,
+                    "red",
+                    "epic"
                 ]
             },
             "bait_inventory": {
                 "fish": 13,
-                "squid": 32
+                "squid": 31
             },
             "wallet": 5840.66,
             "collection": {
