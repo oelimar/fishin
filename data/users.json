@@ -5,16 +5,16 @@
         "data": {
             "fish_inventory": {
                 "1": [
-                    "Eel",
-                    60.92,
-                    15.991500000000002,
-                    "blue",
-                    "uncommon"
+                    "Tuna",
+                    156.4206,
+                    54.74721000000001,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
                 "fish": 13,
-                "squid": 35
+                "squid": 34
             },
             "wallet": 5840.66,
             "collection": {
