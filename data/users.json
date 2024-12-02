@@ -262,11 +262,18 @@
                     216.39086700000004,
                     "purple",
                     "rare"
+                ],
+                "38": [
+                    "Mackerel",
+                    41.5269,
+                    4.3603245,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
                 "squid": 24,
-                "fish": 177
+                "fish": 176
             },
             "wallet": 5775.79,
             "collection": {
