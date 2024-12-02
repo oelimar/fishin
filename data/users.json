@@ -59,10 +59,17 @@
                     67.79530450000001,
                     "gray",
                     "common"
+                ],
+                "9": [
+                    "Swordfish",
+                    285.0608,
+                    329.245224,
+                    "red",
+                    "epic"
                 ]
             },
             "bait_inventory": {
-                "fish": 5,
+                "fish": 4,
                 "squid": 25
             },
             "wallet": 7325.79,
@@ -155,14 +162,14 @@
                 "Grouper": null,
                 "Pufferfish": null,
                 "Swordfish": [
-                    239.5241,
-                    "uncommon",
-                    "blue",
-                    "06-08-2024 23:15:28",
+                    285.0608,
+                    "epic",
+                    "red",
+                    "02-12-2024 19:36:30",
                     "ocean",
                     "fish",
-                    8.3833435,
-                    0.7984136666666667
+                    9.977128,
+                    0.9502026666666665
                 ],
                 "Clownfish": null,
                 "Eel": [
