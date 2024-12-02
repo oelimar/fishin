@@ -31,11 +31,18 @@
                     2.1744554999999997,
                     "gray",
                     "common"
+                ],
+                "5": [
+                    "Swordfish",
+                    131.1038,
+                    50.474963,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
                 "squid": 24,
-                "fish": 172
+                "fish": 171
             },
             "wallet": 7831.74,
             "collection": {
