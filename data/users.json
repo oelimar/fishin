@@ -129,11 +129,18 @@
                     7.283067750000001,
                     "blue",
                     "uncommon"
+                ],
+                "19": [
+                    "Mackerel",
+                    46.5429,
+                    7.330506750000001,
+                    "blue",
+                    "uncommon"
                 ]
             },
             "bait_inventory": {
                 "squid": 24,
-                "fish": 196
+                "fish": 195
             },
             "wallet": 5775.79,
             "collection": {
