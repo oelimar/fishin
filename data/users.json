@@ -59,11 +59,18 @@
                     338.76785250000006,
                     "red",
                     "epic"
+                ],
+                "9": [
+                    "Mackerel",
+                    29.6778,
+                    3.116169,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
                 "squid": 24,
-                "fish": 168
+                "fish": 167
             },
             "wallet": 7831.74,
             "collection": {
