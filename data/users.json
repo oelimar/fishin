@@ -12,11 +12,11 @@
                     "uncommon"
                 ],
                 "2": [
-                    "Mackerel",
-                    33.5377,
-                    3.5214585000000005,
-                    "gray",
-                    "common"
+                    "Northern Pike",
+                    113.8469,
+                    23.907849000000002,
+                    "blue",
+                    "uncommon"
                 ],
                 "3": [
                     "Mackerel",
@@ -126,7 +126,7 @@
             },
             "bait_inventory": {
                 "squid": 24,
-                "fish": 157,
+                "fish": 156,
                 "bread": 9
             },
             "wallet": 7724.71,
