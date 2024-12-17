@@ -3,133 +3,13 @@
         "password": "rhz0cru_udp5bag5KFK",
         "account_created": "06-08-2024 17:00:33",
         "data": {
-            "fish_inventory": {
-                "1": [
-                    "Catfish",
-                    212.3297,
-                    44.589237000000004,
-                    "blue",
-                    "uncommon"
-                ],
-                "2": [
-                    "Northern Pike",
-                    113.8469,
-                    23.907849000000002,
-                    "blue",
-                    "uncommon"
-                ],
-                "3": [
-                    "Mackerel",
-                    30.8727,
-                    3.2416335,
-                    "gray",
-                    "common"
-                ],
-                "4": [
-                    "Mackerel",
-                    20.7091,
-                    2.1744554999999997,
-                    "gray",
-                    "common"
-                ],
-                "5": [
-                    "Swordfish",
-                    131.1038,
-                    50.474963,
-                    "gray",
-                    "common"
-                ],
-                "6": [
-                    "Mackerel",
-                    51.9928,
-                    8.188866,
-                    "blue",
-                    "uncommon"
-                ],
-                "7": [
-                    "Mackerel",
-                    44.1997,
-                    6.961452750000001,
-                    "blue",
-                    "uncommon"
-                ],
-                "8": [
-                    "Swordfish",
-                    293.3055,
-                    338.76785250000006,
-                    "red",
-                    "epic"
-                ],
-                "9": [
-                    "Mackerel",
-                    29.6778,
-                    3.116169,
-                    "gray",
-                    "common"
-                ],
-                "10": [
-                    "Swordfish",
-                    185.2419,
-                    71.3181315,
-                    "gray",
-                    "common"
-                ],
-                "11": [
-                    "Mackerel",
-                    41.3536,
-                    4.342128000000001,
-                    "gray",
-                    "common"
-                ],
-                "12": [
-                    "Mackerel",
-                    23.3359,
-                    2.4502694999999997,
-                    "gray",
-                    "common"
-                ],
-                "13": [
-                    "Swordfish",
-                    123.6174,
-                    47.592699,
-                    "gray",
-                    "common"
-                ],
-                "14": [
-                    "Swordfish",
-                    105.9538,
-                    40.792213000000004,
-                    "gray",
-                    "common"
-                ],
-                "15": [
-                    "Swordfish",
-                    290.2994,
-                    335.2958070000001,
-                    "red",
-                    "epic"
-                ],
-                "16": [
-                    "Swordfish",
-                    174.402,
-                    67.14477,
-                    "gray",
-                    "common"
-                ],
-                "17": [
-                    "Swordfish",
-                    210.3621,
-                    121.48411275000001,
-                    "blue",
-                    "uncommon"
-                ]
-            },
+            "fish_inventory": {},
             "bait_inventory": {
                 "squid": 24,
                 "fish": 156,
                 "bread": 9
             },
-            "wallet": 7724.71,
+            "wallet": 8953.4,
             "collection": {
                 "Sea Bass": [
                     46.3818,
