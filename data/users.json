@@ -174,45 +174,9 @@
         "password": "ScBnsZprbId$k-8eBwtx",
         "account_created": "21-09-2025 02:08:03",
         "data": {
-            "fish_inventory": {
-                "1": [
-                    "Mackerel",
-                    24.2435,
-                    2.5455675,
-                    "gray",
-                    "common"
-                ],
-                "2": [
-                    "Swordfish",
-                    143.0616,
-                    55.07871600000001,
-                    "gray",
-                    "common"
-                ],
-                "3": [
-                    "Mackerel",
-                    47.1739,
-                    7.4298892500000004,
-                    "blue",
-                    "uncommon"
-                ],
-                "4": [
-                    "Swordfish",
-                    271.157,
-                    208.79089000000005,
-                    "purple",
-                    "rare"
-                ],
-                "5": [
-                    "Swordfish",
-                    155.1071,
-                    59.7162335,
-                    "gray",
-                    "common"
-                ]
-            },
+            "fish_inventory": {},
             "bait_inventory": {},
-            "wallet": 0,
+            "wallet": 333.57000000000005,
             "collection": {
                 "Sea Bass": null,
                 "Carp": null,
