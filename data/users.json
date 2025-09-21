@@ -230,10 +230,17 @@
                     95.02694250000002,
                     "blue",
                     "uncommon"
+                ],
+                "9": [
+                    "Tuna",
+                    219.5574,
+                    115.26763500000001,
+                    "blue",
+                    "uncommon"
                 ]
             },
             "bait_inventory": {
-                "squid": 2,
+                "squid": 1,
                 "worm": 3,
                 "fly": 3
             },
