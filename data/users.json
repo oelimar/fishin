@@ -174,9 +174,17 @@
         "password": "ScBnsZprbId$k-8eBwtx",
         "account_created": "21-09-2025 02:08:03",
         "data": {
-            "fish_inventory": {},
+            "fish_inventory": {
+                "1": [
+                    "Tuna",
+                    174.8227,
+                    61.18794500000001,
+                    "gray",
+                    "common"
+                ]
+            },
             "bait_inventory": {
-                "squid": 10,
+                "squid": 9,
                 "worm": 3,
                 "fly": 3
             },
@@ -189,7 +197,16 @@
                 "Sole": null,
                 "Bream": null,
                 "Trout": null,
-                "Tuna": null,
+                "Tuna": [
+                    174.8227,
+                    "common",
+                    "gray",
+                    "21-09-2025 02:14:31",
+                    "ocean",
+                    "squid",
+                    6.118794500000001,
+                    0.6992908
+                ],
                 "Mackerel": [
                     47.1739,
                     "uncommon",
