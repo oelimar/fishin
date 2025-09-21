@@ -188,10 +188,17 @@
                     55.07871600000001,
                     "gray",
                     "common"
+                ],
+                "3": [
+                    "Mackerel",
+                    47.1739,
+                    7.4298892500000004,
+                    "blue",
+                    "uncommon"
                 ]
             },
             "bait_inventory": {
-                "fish": 3
+                "fish": 2
             },
             "wallet": 0,
             "collection": {
@@ -204,14 +211,14 @@
                 "Trout": null,
                 "Tuna": null,
                 "Mackerel": [
-                    24.2435,
-                    "common",
-                    "gray",
-                    "21-09-2025 02:10:29",
+                    47.1739,
+                    "uncommon",
+                    "blue",
+                    "21-09-2025 02:11:49",
                     "ocean",
                     "fish",
-                    0.8485225000000001,
-                    0.40405833333333335
+                    1.6510865000000003,
+                    0.7862316666666668
                 ],
                 "Halibut": null,
                 "Red Snapper": null,
