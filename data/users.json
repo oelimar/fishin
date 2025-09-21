@@ -188,10 +188,17 @@
                     163.10938000000002,
                     "purple",
                     "rare"
+                ],
+                "3": [
+                    "Tuna",
+                    119.1626,
+                    41.70691000000001,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "squid": 8,
+                "squid": 7,
                 "worm": 3,
                 "fly": 3
             },
