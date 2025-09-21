@@ -169,5 +169,36 @@
                 "Eel": null
             }
         }
+    },
+    "homoshit:)": {
+        "password": "ScBnsZprbId$k-8eBwtx",
+        "account_created": "21-09-2025 02:08:03",
+        "data": {
+            "fish_inventory": {},
+            "bait_inventory": {
+                "fish": 5
+            },
+            "wallet": 0,
+            "collection": {
+                "Sea Bass": null,
+                "Carp": null,
+                "Northern Pike": null,
+                "Catfish": null,
+                "Sole": null,
+                "Bream": null,
+                "Trout": null,
+                "Tuna": null,
+                "Mackerel": null,
+                "Halibut": null,
+                "Red Snapper": null,
+                "Anglerfish": null,
+                "Goldfish": null,
+                "Grouper": null,
+                "Pufferfish": null,
+                "Swordfish": null,
+                "Clownfish": null,
+                "Eel": null
+            }
+        }
     }
 }
