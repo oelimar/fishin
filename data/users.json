@@ -174,83 +174,12 @@
         "password": "ScBnsZprbId$k-8eBwtx",
         "account_created": "21-09-2025 02:08:03",
         "data": {
-            "fish_inventory": {
-                "1": [
-                    "Tuna",
-                    174.8227,
-                    61.18794500000001,
-                    "gray",
-                    "common"
-                ],
-                "2": [
-                    "Tuna",
-                    233.0134,
-                    163.10938000000002,
-                    "purple",
-                    "rare"
-                ],
-                "3": [
-                    "Tuna",
-                    119.1626,
-                    41.70691000000001,
-                    "gray",
-                    "common"
-                ],
-                "4": [
-                    "Tuna",
-                    127.7476,
-                    44.71166,
-                    "gray",
-                    "common"
-                ],
-                "5": [
-                    "Tuna",
-                    132.4419,
-                    46.354665000000004,
-                    "gray",
-                    "common"
-                ],
-                "6": [
-                    "Tuna",
-                    109.5917,
-                    38.35709500000001,
-                    "gray",
-                    "common"
-                ],
-                "7": [
-                    "Tuna",
-                    131.5988,
-                    46.05958000000001,
-                    "gray",
-                    "common"
-                ],
-                "8": [
-                    "Tuna",
-                    181.0037,
-                    95.02694250000002,
-                    "blue",
-                    "uncommon"
-                ],
-                "9": [
-                    "Tuna",
-                    219.5574,
-                    115.26763500000001,
-                    "blue",
-                    "uncommon"
-                ],
-                "10": [
-                    "Tuna",
-                    131.3239,
-                    45.963365,
-                    "gray",
-                    "common"
-                ]
-            },
+            "fish_inventory": {},
             "bait_inventory": {
                 "worm": 3,
                 "fly": 3
             },
-            "wallet": 262.89000000000004,
+            "wallet": 960.6400000000001,
             "collection": {
                 "Sea Bass": null,
                 "Carp": null,
