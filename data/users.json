@@ -202,11 +202,16 @@
                     208.79089000000005,
                     "purple",
                     "rare"
+                ],
+                "5": [
+                    "Swordfish",
+                    155.1071,
+                    59.7162335,
+                    "gray",
+                    "common"
                 ]
             },
-            "bait_inventory": {
-                "fish": 1
-            },
+            "bait_inventory": {},
             "wallet": 0,
             "collection": {
                 "Sea Bass": null,
