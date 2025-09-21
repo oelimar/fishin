@@ -209,10 +209,17 @@
                     46.354665000000004,
                     "gray",
                     "common"
+                ],
+                "6": [
+                    "Tuna",
+                    109.5917,
+                    38.35709500000001,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "squid": 5,
+                "squid": 4,
                 "worm": 3,
                 "fly": 3
             },
