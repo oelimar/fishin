@@ -174,9 +174,17 @@
         "password": "ScBnsZprbId$k-8eBwtx",
         "account_created": "21-09-2025 02:08:03",
         "data": {
-            "fish_inventory": {},
+            "fish_inventory": {
+                "1": [
+                    "Mackerel",
+                    24.2435,
+                    2.5455675,
+                    "gray",
+                    "common"
+                ]
+            },
             "bait_inventory": {
-                "fish": 5
+                "fish": 4
             },
             "wallet": 0,
             "collection": {
@@ -188,7 +196,16 @@
                 "Bream": null,
                 "Trout": null,
                 "Tuna": null,
-                "Mackerel": null,
+                "Mackerel": [
+                    24.2435,
+                    "common",
+                    "gray",
+                    "21-09-2025 02:10:29",
+                    "ocean",
+                    "fish",
+                    0.8485225000000001,
+                    0.40405833333333335
+                ],
                 "Halibut": null,
                 "Red Snapper": null,
                 "Anglerfish": null,
