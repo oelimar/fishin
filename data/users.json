@@ -181,10 +181,17 @@
                     2.5455675,
                     "gray",
                     "common"
+                ],
+                "2": [
+                    "Swordfish",
+                    143.0616,
+                    55.07871600000001,
+                    "gray",
+                    "common"
                 ]
             },
             "bait_inventory": {
-                "fish": 4
+                "fish": 3
             },
             "wallet": 0,
             "collection": {
@@ -212,7 +219,16 @@
                 "Goldfish": null,
                 "Grouper": null,
                 "Pufferfish": null,
-                "Swordfish": null,
+                "Swordfish": [
+                    143.0616,
+                    "common",
+                    "gray",
+                    "21-09-2025 02:11:12",
+                    "ocean",
+                    "fish",
+                    5.007156,
+                    0.476872
+                ],
                 "Clownfish": null,
                 "Eel": null
             }
